@@ -1,5 +1,5 @@
 <template>
-  <div class="expression-exercises container">
+  <div class="vue-exercises">
     <div class="row">
       <div class="col-12">
         <h1>Exercises</h1>
@@ -9,14 +9,14 @@
             below:
           </p>
 
-          <p>{{}}</p>
+          <p>{{202 / 18}}</p>
         </div>
         <div class="border p-1">
           <p>
             Use interpolation to get the customary Hello, World! to display on
             the screen. Don't forget your quotes
           </p>
-          <p>{{}}</p>
+          <p>{{"Hello World!"}}</p>
         </div>
       </div>
     </div>
