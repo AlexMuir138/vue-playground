@@ -73,7 +73,7 @@
 }</code></pre>
         <p>Results:</p>
         <input v-model="state.myName" />
-        <p>{{ state.myName }}</p>
+        <p>Hello {{ state.myName }}</p>
         <p>
           We can see that the v-model allows whatever is typed into the input
           field to be <em>'bound'</em> to the data within the state object, that

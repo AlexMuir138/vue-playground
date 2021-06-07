@@ -14,19 +14,20 @@
             Then use the index to print the players place in the collection.
           </p>
           <!-- add the v-for to player-card -->
-          <div class="player-card text-center">
-            <h5>{{}}</h5>
+          //NOTE for some reason this will not work without a key attribute. 
+          <div class="player-card text-center" v-for="(player, index) in state.players" :key="index">
+            <h5>Player - {{index + 1}}</h5>
             <div>
-              <img class="img" src="" />
+              <img :src="player.photo" />
             </div>
             <div>
-              <span>{{}}</span>
+              <span>{{player.name}}</span>
             </div>
             <div>
-              <span>{{}}</span>
+              <span>{{player.position}}</span>
             </div>
             <div>
-              <span>{{}}</span>
+              <span>{{player.number}}</span>
             </div>
           </div>
         </div>
@@ -38,8 +39,9 @@
             property on the object we want to print the key(property name) and
             value contained at that key.
           </p>
+          //NOTE this will print out all of the keyword sections of blog (title, desctiption, author and its value. Value could technically be anything like banana)
           <div class="blog" v-for="(value, key) in state.blog" :key="key">
-            <p>{{}}: {{}}</p>
+            <p>{{key}}: {{value}}</p>
           </div>
         </div>
       </div>
